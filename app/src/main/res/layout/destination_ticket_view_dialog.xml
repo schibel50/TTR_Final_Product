@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#3E80B4"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Destination Cards:"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="#3E80B4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3E80B4" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ticket1"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ticket2"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ticket3"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3E80B4"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="&lt;Back"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Close"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="Next>"
+            android:textColor="#5DBCD2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
