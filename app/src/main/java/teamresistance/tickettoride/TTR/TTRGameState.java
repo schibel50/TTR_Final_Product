@@ -51,12 +51,18 @@ public class TTRGameState extends GameState implements Serializable{
     private boolean onlyDownDeck;
     /** The selected track on screen. Set to -1 if no track is selected. */
     private int trackSpot = -1;
+    /** the currently selected track color*/
     private String selectedTrackColor;
-    private boolean useRainbow;
-    private boolean gameStart;
-    private boolean reset;
-    private boolean isLastRound = false;
-    private boolean isGameOver = false;
+    private boolean useRainbow; //says whether to use rainbow cards or not.
+    private boolean gameStart; //says if the game has started.
+    private boolean reset; //checks to see if some of the states need to be reset at the start of a turn
+    private boolean isLastRound = false; //indicates the start of the final round
+    private boolean isGameOver = false; //indicates if the game is over
+
+    /**
+     * All of these boolean arrays are used in order to ensure that the correct information is passed
+     * to the surface view. Particularly important for network play.
+     */
     private boolean[] faceUpCardsHighlight = new boolean[5];
     private boolean[] selectedTracks;
     private boolean[] coveredTracks;
@@ -151,7 +157,7 @@ public class TTRGameState extends GameState implements Serializable{
         gameStart = false;
         reset = false;
 
-        //tracks
+        //tracks and the cities they're connected to.
 
         //0
         tempTrack= new Track(5, "Green", "Portland", "San Francisco");

@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 /**
  *  Deck is a class that represents any type of deck, and implements methods appropriate to decks
+ * External Citation
+ * Date 03/16
+ * Source: SlapJack class example
+ * Solution: The Deck class in SlapJack from class is very similar to the
+ * functionality we wanted for our cards.
  *
  * @author Nick Scacciotti
  * @author Nick Larson

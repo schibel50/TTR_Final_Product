@@ -190,7 +190,12 @@ public class DestinationViewDialog extends Dialog implements android.view.View.O
         for (int i = screenSpot*3; i < (screenSpot*3) + 3; i++) {
             if(i < myState.getPlayerDestinationDecks()[myState.getPlayerID()].getCards().size()) {
                 tempCard = (DestinationCards) myState.getPlayerDestinationDecks()[myState.getPlayerID()].getCards().get(i);
-                //http://stackoverflow.com/questions/2859212/how-to-clear-an-imageview-in-android
+                /* External Citation
+                * Date 4/23/16
+                * Problem: Had trouble resetting an imageView
+                * Source: http://stackoverflow.com/questions/2859212/how-to-clear-an-imageview-in-android
+                * Solution: This example helped with getting it to reset.
+                */
                 tickets[i-(screenSpot*3)].setImageResource(0);
                 tickets[i-(screenSpot*3)].setImageResource(setDestCard(tempCard.getCity1(), tempCard.getCity2()));
                 tickets[i-(screenSpot*3)].setVisibility(View.VISIBLE);
